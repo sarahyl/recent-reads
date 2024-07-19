@@ -13,11 +13,11 @@ class Author(models.Model):
 #model for Books
 class Book(models.Model):
     #set of choices for reading status of book
-    STATUS_CHOICES = {
-        "TBR": "To Be Read",
-        "C": "Currently Reading",
-        "F": "Finished",
-    }
+    STATUS_CHOICES = [
+        ("TBR", "To Be Read"),
+        ("C", "Currently Reading"),
+        ("F", "Finished")
+    ]
 
     title = models.CharField(max_length=100)
     author = models.ForeignKey(Author, on_delete=models.CASCADE)
