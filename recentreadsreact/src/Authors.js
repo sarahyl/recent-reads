@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 
 // base url of Django API
-const API_BASE_URL = 'http://127.0.0.1:8000/api/';
+const API_BASE_URL = 'http://54.82.248.138:8000/api/';
 
 //component that displays all of the books in the database using the API endpoint
 //returns HTML of the author cards in two columns
