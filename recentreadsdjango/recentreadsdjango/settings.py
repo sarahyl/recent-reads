@@ -129,7 +129,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #whitelist localhost port 3000
 #allows frontend to interact with backend
 CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000'
+     'http://localhost:3000',
+     'http://recentreads.s3-website-us-east-1.amazonaws.com/'
 ]
 
 #rest framework permissions
